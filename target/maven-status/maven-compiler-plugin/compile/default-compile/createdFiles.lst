@@ -1,5 +1,6 @@
 com\cityapp\model\WeatherState.class
-com\cityapp\model\City.class
-com\cityapp\Main.class
+com\cityapp\repository\CityRepository.class
 com\cityapp\service\JsonCityLoader$1.class
 com\cityapp\service\JsonCityLoader.class
+com\cityapp\model\City.class
+com\cityapp\Main.class

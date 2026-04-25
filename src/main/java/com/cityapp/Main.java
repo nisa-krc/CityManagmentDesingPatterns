@@ -1,18 +1,21 @@
 package com.cityapp;
 
 import com.cityapp.model.City;
-import com.cityapp.service.JsonCityLoader;
+import com.cityapp.repository.CityRepository;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        JsonCityLoader loader = new JsonCityLoader();
-        List<City> cities = loader.load();
+        CityRepository repo1 = CityRepository.getInstance();
+        CityRepository repo2 = CityRepository.getInstance();
 
-        System.out.println("=== City Management App - BM324 ===");
-        System.out.println("Loaded " + cities.size() + " cities from cities.json:\n");
+        System.out.println("=== Singleton Test ===");
+        System.out.println("repo1 == repo2: " + (repo1 == repo2));
+        System.out.println();
 
+        List<City> cities = repo1.getCities();
+        System.out.println("Loaded " + cities.size() + " cities via CityRepository:\n");
         for (City city : cities) {
             System.out.println(city);
         }
