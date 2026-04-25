@@ -8,7 +8,7 @@ public class Main {
         try {
             new ConsoleMenu(CityRepository.getInstance().getCities()).start();
         } catch (RuntimeException e) {
-            System.err.println("[HATA] Uygulama başlatılamadı: " + e.getMessage());
+            System.err.println("[HATA] Uygulama baslatilamadi: " + e.getMessage());
             System.exit(1);
         }
     }

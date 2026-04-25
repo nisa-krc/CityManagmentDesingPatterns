@@ -33,12 +33,12 @@ public class ConsoleMenu {
                 case "1" -> { new SortMenu(cities, display, scanner).show(); printMenu(); }
                 case "2" -> { new FilterMenu(cities, display, scanner).show(); printMenu(); }
                 case "Q" -> {
-                    System.out.println("Çıkılıyor...");
+                    System.out.println("Cikiliyor...");
                     scanner.close();
                     return;
                 }
                 default -> {
-                    System.out.println("Geçersiz seçim. Lütfen tekrar deneyin.");
+                    System.out.println("Gecersiz secim. Lütfen tekrar deneyin.");
                     printMenu();
                 }
             }
@@ -47,9 +47,9 @@ public class ConsoleMenu {
 
     private void printMenu() {
         System.out.println("\n--- Ana Menü ---");
-        System.out.println("1- Listeleme için tür seçin");
-        System.out.println("2- Filtreleme için tür seçin");
-        System.out.println("Q- Çıkış");
-        System.out.print("Seçiminiz: ");
+        System.out.println("1- Listeleme icin tür secin");
+        System.out.println("2- Filtreleme icin tür secin");
+        System.out.println("Q- Cikis");
+        System.out.print("Seciminiz: ");
     }
 }

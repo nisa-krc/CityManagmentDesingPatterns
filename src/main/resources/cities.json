@@ -8,6 +8,6 @@
   { "name": "Buhara", "population": 280000, "area": 143.1, "currentTemperature": 18, "currentWeatherState": "SUNNY" },
   { "name": "Saraybosna", "population": 347000, "area": 141.6, "currentTemperature": 26, "currentWeatherState": "RAINY" },
   { "name": "Uskup", "population": 526502, "area": 571.6, "currentTemperature": 19, "currentWeatherState": "RAINY" },
-  { "name": "Şam", "population":  2132100, "area": 190.1, "currentTemperature": 29, "currentWeatherState": "SUNNY" },
+  { "name": "Sam", "population":  2132100, "area": 190.1, "currentTemperature": 29, "currentWeatherState": "SUNNY" },
   { "name": "Isfahan", "population": 2243249, "area": 551.6, "currentTemperature": 32, "currentWeatherState": "SUNNY" }
 ]

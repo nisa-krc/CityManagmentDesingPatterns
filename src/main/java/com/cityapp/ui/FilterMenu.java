@@ -35,18 +35,18 @@ public class FilterMenu {
                 case "3" -> { display.printIterator(new RainyCityIterator(cities)); printMenu(); }
                 case "4" -> { display.printIterator(new SnowyCityIterator(cities)); printMenu(); }
                 case "Q" -> { return; }
-                default  -> { System.out.println("Geçersiz seçim. Lütfen tekrar deneyin."); printMenu(); }
+                default  -> { System.out.println("Gecersiz secim. Lütfen tekrar deneyin."); printMenu(); }
             }
         }
     }
 
     private void printMenu() {
         System.out.println("\n--- Filtreleme Menüsü ---");
-        System.out.println("1- Güneşli şehirler");
-        System.out.println("2- Bulutlu şehirler");
-        System.out.println("3- Yağmurlu şehirler");
-        System.out.println("4- Karlı şehirler");
+        System.out.println("1- Günesli sehirler");
+        System.out.println("2- Bulutlu sehirler");
+        System.out.println("3- Yagmurlu sehirler");
+        System.out.println("4- Karli sehirler");
         System.out.println("Q- Geri dön");
-        System.out.print("Seçiminiz: ");
+        System.out.print("Seciminiz: ");
     }
 }

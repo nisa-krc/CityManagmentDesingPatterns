@@ -12,19 +12,19 @@ public class ConsoleDisplay {
     public void printCities(List<City> cities) {
         System.out.println(LINE);
         System.out.printf("%-15s %12s %12s %7s %s%n",
-                "Şehir", "Nüfus", "Alan (km²)", "Sıcak.", "Hava");
+                "Sehir", "Nufus", "Alan (km²)", "Sicak.", "Hava");
         System.out.println(LINE);
         for (City city : cities) {
             printRow(city);
         }
         System.out.println(LINE);
-        System.out.println("Toplam: " + cities.size() + " şehir");
+        System.out.println("Toplam: " + cities.size() + " sehir");
     }
 
     public void printIterator(CityIterator iterator) {
         System.out.println(LINE);
         System.out.printf("%-15s %12s %12s %7s %s%n",
-                "Şehir", "Nüfus", "Alan (km²)", "Sıcak.", "Hava");
+                "Sehir", "Nufus", "Alan (km²)", "Sicak.", "Hava");
         System.out.println(LINE);
         int count = 0;
         while (iterator.hasNext()) {
@@ -33,9 +33,9 @@ public class ConsoleDisplay {
         }
         System.out.println(LINE);
         if (count == 0) {
-            System.out.println("Bu kritere uyan şehir bulunamadı.");
+            System.out.println("Bu kritere uyan sehir bulunamadi.");
         } else {
-            System.out.println("Toplam: " + count + " şehir");
+            System.out.println("Toplam: " + count + " sehir");
         }
     }
 

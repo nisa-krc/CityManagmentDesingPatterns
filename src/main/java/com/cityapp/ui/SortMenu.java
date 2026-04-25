@@ -34,17 +34,17 @@ public class SortMenu {
                 case "2" -> { display.printCities(new CitySorter(new SortByPopulation()).sort(cities)); printMenu(); }
                 case "3" -> { display.printCities(new CitySorter(new SortByArea()).sort(cities)); printMenu(); }
                 case "Q" -> { return; }
-                default  -> { System.out.println("Geçersiz seçim. Lütfen tekrar deneyin."); printMenu(); }
+                default  -> { System.out.println("Gecersiz secim. Lütfen tekrar deneyin."); printMenu(); }
             }
         }
     }
 
     private void printMenu() {
-        System.out.println("\n--- Sıralama Menüsü ---");
-        System.out.println("1- İsme göre sıralama");
-        System.out.println("2- Nüfusa göre sıralama");
-        System.out.println("3- Yüzölçümüne göre sıralama");
+        System.out.println("\n--- Siralama Menüsü ---");
+        System.out.println("1- Isme göre siralama");
+        System.out.println("2- Nüfusa göre siralama");
+        System.out.println("3- Yüzölcümüne göre siralama");
         System.out.println("Q- Geri dön");
-        System.out.print("Seçiminiz: ");
+        System.out.print("Seciminiz: ");
     }
 }
