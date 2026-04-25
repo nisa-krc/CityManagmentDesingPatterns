@@ -1,15 +1,5 @@
 package com.cityapp.model;
 
-/**
- * Represents a city with its core properties.
- *
- * Fields are named exactly as they appear in cities.json so that
- * Gson can deserialize them automatically without any extra mapping.
- *
- * Used by:
- *   - Strategy Pattern  → sorted by name, population, or area
- *   - Iterator Pattern  → filtered by currentWeatherState
- */
 public class City {
 
     private String name;
@@ -18,9 +8,6 @@ public class City {
     private double currentTemperature;
     private WeatherState currentWeatherState;
 
-    // ── Constructors ────────────────────────────────────────────────────────
-
-    /** No-arg constructor required by Gson for deserialization. */
     public City() {}
 
     public City(String name, long population, double area,
@@ -31,8 +18,6 @@ public class City {
         this.currentTemperature = currentTemperature;
         this.currentWeatherState = currentWeatherState;
     }
-
-    // ── Getters ─────────────────────────────────────────────────────────────
 
     public String getName() {
         return name;
@@ -54,8 +39,6 @@ public class City {
         return currentWeatherState;
     }
 
-    // ── Setters ─────────────────────────────────────────────────────────────
-
     public void setName(String name) {
         this.name = name;
     }
@@ -75,8 +58,6 @@ public class City {
     public void setCurrentWeatherState(WeatherState currentWeatherState) {
         this.currentWeatherState = currentWeatherState;
     }
-
-    // ── toString ─────────────────────────────────────────────────────────────
 
     @Override
     public String toString() {
