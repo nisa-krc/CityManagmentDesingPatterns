@@ -1,8 +1,11 @@
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\strategy\SortByPopulation.java
+C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\ui\ConsoleDisplay.java
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\strategy\SortStrategy.java
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\iterator\CloudyCityIterator.java
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\model\City.java
+C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\ui\FilterMenu.java
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\iterator\SunnyCityIterator.java
+C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\ui\ConsoleMenu.java
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\repository\CityRepository.java
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\Main.java
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\service\JsonCityLoader.java
@@ -13,3 +16,4 @@ C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\iterator\CityIterator.java
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\strategy\SortByArea.java
 C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\iterator\SnowyCityIterator.java
+C:\Users\user\Documents\CityManagmentDesingPatterns\CityManagmentDesingPatterns\src\main\java\com\cityapp\ui\SortMenu.java

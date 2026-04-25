@@ -17,7 +17,12 @@ public class CityRepository {
 
     public static CityRepository getInstance() {
         if (instance == null) {
-            instance = new CityRepository();
+            try {
+                instance = new CityRepository();
+            } catch (RuntimeException e) {
+                instance = null;
+                throw e;
+            }
         }
         return instance;
     }
