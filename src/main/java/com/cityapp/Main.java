@@ -1,28 +1,36 @@
 package com.cityapp;
 
+import com.cityapp.iterator.CityIterator;
+import com.cityapp.iterator.CloudyCityIterator;
+import com.cityapp.iterator.RainyCityIterator;
+import com.cityapp.iterator.SnowyCityIterator;
+import com.cityapp.iterator.SunnyCityIterator;
 import com.cityapp.model.City;
 import com.cityapp.repository.CityRepository;
-import com.cityapp.strategy.CitySorter;
-import com.cityapp.strategy.SortByArea;
-import com.cityapp.strategy.SortByName;
-import com.cityapp.strategy.SortByPopulation;
 
 import java.util.List;
 
 public class Main {
+
     public static void main(String[] args) {
         List<City> cities = CityRepository.getInstance().getCities();
-        CitySorter sorter = new CitySorter(new SortByName());
 
-        System.out.println("=== Sorted by Name ===");
-        sorter.sort(cities).forEach(c -> System.out.println(c.getName()));
+        printFiltered("SUNNY  ☀", new SunnyCityIterator(cities));
+        printFiltered("CLOUDY ⛅", new CloudyCityIterator(cities));
+        printFiltered("RAINY  🌧", new RainyCityIterator(cities));
+        printFiltered("SNOWY  ❄", new SnowyCityIterator(cities));
+    }
 
-        sorter.setStrategy(new SortByPopulation());
-        System.out.println("\n=== Sorted by Population (desc) ===");
-        sorter.sort(cities).forEach(c -> System.out.printf("%-15s %,d%n", c.getName(), c.getPopulation()));
-
-        sorter.setStrategy(new SortByArea());
-        System.out.println("\n=== Sorted by Area (desc) ===");
-        sorter.sort(cities).forEach(c -> System.out.printf("%-15s %.1f km²%n", c.getName(), c.getArea()));
+    private static void printFiltered(String label, CityIterator iterator) {
+        System.out.println("\n=== " + label + " Cities ===");
+        boolean found = false;
+        while (iterator.hasNext()) {
+            City city = iterator.next();
+            System.out.printf("  %-15s temp: %.1f°C%n", city.getName(), city.getCurrentTemperature());
+            found = true;
+        }
+        if (!found) {
+            System.out.println("  (none)");
+        }
     }
 }
